@@ -1,9 +1,9 @@
 def factorical (number):
-    factorical = 1
-    for i in range(1, number + 1):
-        factorical *= i
-    return factorical
-
+    if number <= 0:
+        return 1
+    else:
+        return factorical (number) * factorical(number - 1)
+    
 def nCr_caculation(val_n, val_r):
     if val_r > val_n or val_n < 0:
         return 0
