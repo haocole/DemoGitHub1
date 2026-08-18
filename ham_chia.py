@@ -1,6 +1,6 @@
 def chia(a,b):
     if b == 0:
-        return "Lỗi không chia cho 0!"
+        return "Lỗi"
     return a/b
 try:
     a = float(input("Nhâp số bị chia: "))
